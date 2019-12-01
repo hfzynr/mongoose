@@ -7,7 +7,7 @@ const todoSchema = new Schema ({
         required: true
     },
     status: {
-        type: String,
+        type: Boolean,
         required: true,
         default: false
     },
@@ -17,5 +17,5 @@ const todoSchema = new Schema ({
     }
 });
 
-const Todos = mongoose.model("todo-data", todoSchema)
+const Todos = mongoose.model("todos-datas", todoSchema)
 module.exports = Todos;
