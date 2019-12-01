@@ -14,7 +14,7 @@ module.exports = {
         try {
             const result = await Todos.insertOne(req.body)
             res.status(200).json({message: "Data successfully added", data: result})
-        } catch {
+        } catch (error) {
             console.log(error);
         }
     }
