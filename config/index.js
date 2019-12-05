@@ -1,4 +1,7 @@
-const {PORT, DATABASE_NAME, DATABASE_HOST_LIVE} = require("./environtment")
+const {PORT,
+    DATABASE_NAME, 
+    DATABASE_HOST_LIVE
+} = require("./environtment")
 const db = require("./connection")
 
 module.exports = {
